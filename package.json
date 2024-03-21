@@ -1,20 +1,20 @@
 {
   "name": "visual-assist-gruvbox-theme",
-  "displayName": "MinchVisualAssistGruvboxTheme",
+  "displayName": "VisualAssistGruvboxTheme",
   "description": "A combination of visual assist and gruvbox theme!",
   "publisher": "MinchCoder",
   "repository": {
     "type": "git",
     "url": "https://github.com/Minchh/vscode-gruvbox-visualassist-theme"
   },
-  "version": "0.1.0",
+  "version": "0.1.2",
   "engines": {
     "vscode": "^1.87.0"
   },
   "keywords": [
     "theme",
     "visual assist",
-    "minch theme",
+    "dark theme",
     "gruvbox"
   ],
   "categories": [
