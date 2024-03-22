@@ -52,7 +52,7 @@
     "scrollbarSlider.background": "#50494599",
 
 		// SIDE BAR
-		"sideBar.background": "#1b1b1b",
+		"sideBar.background": "#181717",
 		"sideBar.border": "#181818",
 		"sideBar.foreground": "#ffffff88",
 		"sideBarTitle.foreground": "#bbbbbb",
@@ -104,8 +104,8 @@
 		"button.foreground": "#1E1E1E",
 		"button.hoverBackground": "#cea800",
 
-		// Editor
-    "editor.background": "#222222",
+		// EDITOR
+    "editor.background": "#1d2021",
     "editor.foreground": "#ebdbb2",
     "editorLineNumber.foreground": "#458588",
     "editorCursor.foreground": "#ebdbb2",
@@ -693,7 +693,7 @@
 			}
 		},
 		{
-			"name": "C# Brackets, Braces",
+			"name": "C# Brackets, Braces, Punctuation",
 			"scope": [
 				"source.cs punctuation.squarebracket.open.cs",
         "source.cs punctuation.parenthesis.open.cs",
@@ -703,6 +703,8 @@
 				"source.cs punctuation.squarebracket.close.cs",
         "source.cs punctuation.definition.typeparameters.begin.cs",
         "source.cs punctuation.definition.typeparameters.end.cs",
+        "source.cs punctuation.terminator.statement.cs",
+        "source.cs punctuation.separator.comma.cs"
 			],
 			"settings": {
 				"foreground": "#EBDBB2",
@@ -900,54 +902,176 @@
     },
     // JAVA ----------------------------------------
     {
-      "name": "coloring of the Java import and package identifiers",
+      "name": "Java Comments, Javadocs",
       "scope": [
-        "storage.modifier.import.java",
-        "storage.modifier.package.java"
+        "source.java comment.line.double-slash.java",
+				"source.java punctuation.definition.comment.java",
+				"source.java comment.block.java"
       ],
       "settings": {
-        "foreground": "#bdae93"
+        "foreground": "#57A64A",
       }
     },
     {
-      "scope": ["keyword.other.import.java", "keyword.other.package.java"],
-      "settings": {
-        "foreground": "#8ec07c"
-      }
-    },
+			"name": "Java Keywords",
+			"scope": [
+				"source.java keyword.other.import.java",
+        "source.java storage.modifier.java",
+        "source.java storage.type.primitive.java",
+        "source.java storage.modifier.implements.java",
+        "source.java variable.language.this.java",
+        "source.java constant.language.java"
+			],
+			"settings": {
+				"foreground": "#F74A33",
+			}
+		},
     {
-      "scope": "storage.type.java",
-      "settings": {
-        "foreground": "#fabd2f"
-      }
-    },
+			"name": "Java Keywods (Control)",
+			"scope": [
+				"source.java keyword.control.java",
+			],
+			"settings": {
+				"foreground": "#D3869B",
+			}
+		},
     {
-      "scope": "storage.type.annotation",
-      "settings": {
-        "foreground": "#83a598",
-        "fontStyle": "bold"
-      }
-    },
+			"name": "Java Brackets, Braces, Punctuation",
+			"scope": [
+				"source.java punctuation.definition.parameters.begin.bracket.round.java",
+        "source.java punctuation.definition.parameters.end.bracket.round.java",
+        "source.java punctuation.section.method.begin.bracket.curly.java",
+        "source.java punctuation.section.method.end.bracket.curly.java",
+        "source.java punctuation.definition.annotation-arguments.begin.bracket.round.java",
+        "source.java punctuation.definition.annotation-arguments.end.bracket.round.java",
+        "source.java punctuation.bracket.square.java",
+        "source.java punctuation.terminator.statement.java",
+        "source.java punctuation.terminator.java",
+        "source.java punctuation.separator.delimiter.java",
+        "source.java punctuation.bracket.round.java",
+        "source.java punctuation.section.block.begin.bracket.curly.java",
+        "source.java punctuation.section.block.end.bracket.curly.java",
+        "source.java punctuation.section.class.begin.bracket.curly.java",
+        "source.java punctuation.section.class.end.bracket.curly.java",
+        "source.java punctuation.section.enum.begin.bracket.curly.java",
+        "source.java punctuation.section.enum.end.bracket.curly.java",
+        "source.java punctuation.bracket.angle.java",
+        "source.java variable.language.wildcard.java",
+        "source.java punctuation.separator.java"
+			],
+			"settings": {
+				"foreground": "#EBDBB2",
+			}
+		},
     {
-      "scope": "keyword.other.documentation.javadoc",
-      "settings": {
-        "foreground": "#8ec07c"
-      }
-    },
-    {
-      "scope": "comment.block.javadoc variable.parameter.java",
-      "settings": {
-        "foreground": "#b8bb26",
-        "fontStyle": "bold"
-      }
-    },
-    {
+      "name": "Java Arithmetic, Relational, Assignemnt, Bitwise Operators",
       "scope": [
-        "source.java variable.other.object",
-        "source.java variable.other.definition.java"
+        "source.java keyword.operator.relational.java",
+        "source.java keyword.operator.increment-decrement.java",
+        "source.java keyword.operator.assignment.java",
+        "source.java keyword.operator.arithmetic.java",
+        "source.java keyword.operator.logical.java",
+        "source.java keyword.operator.bitwise.shift.java",
+        "source.java keyword.operator.bitwise.java",
+        "source.java keyword.operator.comparison.java",
+        "source.java keyword.control.ternary.java"
       ],
       "settings": {
-        "foreground": "#ebdbb2"
+        "foreground": "#A89984",
+      }
+    },
+    {
+			"name": "Java Numbers",
+			"scope": [
+				"source.java constant.numeric.decimal.java"
+			],
+			"settings": {
+				"foreground": "#B5CEA8",
+			}
+		},
+		{
+			"name": "Java Strings",
+			"scope": [
+				"source.java punctuation",
+				"source.java string.quoted.double.java"
+			],
+			"settings": {
+				"foreground": "#ffce6c",
+			}
+		},
+		{
+			"name": "Java Escape Sequence",
+			"scope": [
+				"source.java constant.character.escape.java",
+			],
+			"settings": {
+				"foreground": "#ff9730",
+				"fontStyle": "bold"
+			}
+		},
+    {
+      "name": "Java Variables",
+      "scope": [
+        "source.java variable.other.definition.java",
+        "source.java variable.other.object.java",
+        "source.java variable.other.object.property.java",
+        "source.java variable.parameter.java"
+      ],
+      "settings": {
+        "foreground": "#EBDBB2",
+      }
+    },
+    {
+      "name": "Java Annotations",
+      "scope": [
+        "source.java punctuation.definition.annotation.java",
+        "source.java storage.type.annotation.java",
+      ],
+      "settings": {
+        "foreground": "#FFD700",
+        "fontStyle": "italic"
+      }
+    },
+    {
+			"name": "Java Classes, Type, Annotations, Generics",
+			"scope": [
+        "source.java entity.name.type.class.java",
+        "source.java storage.type.java",
+        "source.java storage.type.object.array.java",
+        "source.java entity.other.inherited-class.java",
+        "source.java storage.type.generic.java"
+			],
+			"settings": {
+				"foreground": "#FFD700",
+			}
+		},
+    {
+      "name": "Java Import",
+      "scope": [
+        "source.java storage.modifier.import.java"
+      ],
+      "settings": {
+        "foreground": "#B8D7A3",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Java Enum",
+      "scope": [
+        "source.java constant.other.enum.java"
+      ],
+      "settings": {
+        "foreground": "#B9771E",
+        "fontStyle": "italic bold"
+      }
+    },
+    {
+      "name": "Java Methods",
+      "scope": [
+        "source.java entity.name.function.java",
+      ],
+      "settings": {
+        "foreground": "#FF8000",
       }
     },
     // LISP ----------------------------------------
