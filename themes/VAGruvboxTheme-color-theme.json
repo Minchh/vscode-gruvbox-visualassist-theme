@@ -1349,6 +1349,16 @@
       }
     },
     {
+      "scope": [
+        "comment.block.css",
+        "punctuation.definition.comment.begin.css",
+        "punctuation.definition.comment.end.css"
+      ],
+      "settings": {
+        "foreground": "#57A64A",
+      }
+    },
+    {
       "scope": "source.css meta.selector",
       "settings": {
         "foreground": "#ebdbb2"
@@ -1437,6 +1447,12 @@
       "scope": "string.quoted.double.html",
       "settings": {
         "foreground": "#ffce6c",
+      }
+    },
+    {
+      "scope": "punctuation.definition.comment.html",
+      "settings": {
+        "foreground": "#57A64A",
       }
     },
     {
