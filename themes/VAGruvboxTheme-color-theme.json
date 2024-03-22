@@ -741,7 +741,8 @@
 			"name": "C# Strings",
 			"scope": [
 				"source.cs punctuation",
-				"source.cs string.quoted.double.cs"
+				"source.cs string.quoted.double.cs",
+        "source.cs string.quoted.single.cs"
 			],
 			"settings": {
 				"foreground": "#ffce6c",
@@ -993,7 +994,8 @@
 			"name": "Java Strings",
 			"scope": [
 				"source.java punctuation",
-				"source.java string.quoted.double.java"
+				"source.java string.quoted.double.java",
+        "source.java string.quoted.single.java"
 			],
 			"settings": {
 				"foreground": "#ffce6c",
@@ -1205,7 +1207,7 @@
     {
       "scope": "entity.other.attribute-name.css",
       "settings": {
-        "foreground": "#fe8019"
+        "foreground": "#bdb76b"
       }
     },
     {
@@ -1217,13 +1219,28 @@
     {
       "scope": "support.type.property-name.css",
       "settings": {
-        "foreground": "#fe8019"
+        "foreground": "#FF8000"
       }
     },
     {
-      "scope": "entity.other.attribute-name.class",
+      "scope": [
+        "support.constant.font-name.css",
+        "constant.numeric.css",
+        "support.constant.property-value.css",
+        "constant.other.color.rgb-value.hex.css",
+        "keyword.other.unit.px.css"
+      ],
       "settings": {
-        "foreground": "#b8bb26"
+        "foreground": "#B5CEA8",
+      }
+    },
+    {
+      "scope": [
+        "entity.other.attribute-name.class.css",
+        "entity.other.attribute-name.id.css"
+      ],
+      "settings": {
+        "foreground": "#e8bf6a"
       }
     },
     {
@@ -1251,6 +1268,7 @@
     {
       "scope": ["entity.name.tag.css"],
       "settings": {
+        "foreground": "#e8bf6a",
         "fontStyle": ""
       }
     },
@@ -1258,21 +1276,154 @@
     {
       "scope": ["punctuation.definition.tag"],
       "settings": {
-        "foreground": "#83a598"
+        "foreground": "#A89984"
       }
     },
     {
       "scope": ["text.html entity.name.tag", "text.html punctuation.tag"],
       "settings": {
-        "foreground": "#8ec07c",
-        "fontStyle": "bold"
+        "foreground": "#7ca197",
+        "fontStyle": ""
+      }
+    },
+    {
+      "scope": "string.quoted.double.html",
+      "settings": {
+        "foreground": "#ffce6c",
+      }
+    },
+    {
+      "scope": "entity.other.attribute-name.html",
+      "settings": {
+        "foreground": "#FFD700",
       }
     },
     // javascript ---------------------------------------
     {
-      "scope": ["source.js variable.language"],
+      "name": "Javascript Comments",
+      "scope": [
+        "source.js comment.line.double-slash.js",
+        "source.js punctuation.definition.comment.js",
+        "source.js comment.block.js"
+      ],
       "settings": {
-        "foreground": "#fe8019"
+        "foreground": "#57A64A",
+      }
+    },
+    {
+      "name": "Javascript Keywords",
+      "scope": [
+        "source.js storage.type.class.js",
+        "source.js keyword.operator.new.js",
+        "source.js variable.language.this.js",
+        "source.js storage.modifier.js",
+        "source.js storage.type.js",
+        "source.js variable.language.super.js",
+        "source.js keyword.operator.expression.of.js",
+        "source.js keyword.operator.expression.instanceof.js"
+      ],
+      "settings": {
+        "foreground": "#F74A33",
+      }
+    },
+    {
+      "name": "Javascript Keywords (Controls)",
+      "scope": [
+        "source.js keyword.control.switch.js",
+        "source.js keyword.control.loop.js",
+        "source.js keyword.control.trycatch.js",
+        "source.js keyword.control.conditional.js"
+      ],
+      "settings": {
+        "foreground": "#D3869B",
+      }
+    },
+    {
+      "name": "Javascript Operators",
+      "scope": [
+        "source.js keyword.operator.logical.js",
+        "source.js keyword.operator.bitwise.shift.js",
+        "source.js keyword.operator.arithmetic.js",
+        "source.js keyword.operator.assignment.js"
+      ],
+      "settings": {
+        "foreground": "#A89984",
+      }
+    },
+    {
+			"name": "Java Brackets, Braces, Punctuation",
+			"scope": [
+				"source.js meta.brace.round.js",
+        "source.js punctuation.definition.block.js",
+        "source.js punctuation.terminator.statement.js",
+        "source.js punctuation.definition.binding-pattern.array.js",
+			],
+			"settings": {
+				"foreground": "#EBDBB2",
+			}
+		},
+    {
+      "name": "Javascript Methods, Functions",
+      "scope": [
+        "source.js entity.name.function.js"
+      ],
+      "settings": {
+        "foreground": "#FF8000",
+      }
+    },
+    {
+      "name": "Javascript Variables",
+      "scope": [
+        "source.js variable.other.property.js",
+        "source.js variable.parameter.js",
+        "source.js variable.other.readwrite.js",
+        "source.js variable.other.constant.js",
+        "source.js variable.other.object.js",
+        "source.js variable.other.object.property.js"
+      ],
+      "settings": {
+        "foreground": "#EBDBB2",
+      }
+    },
+    {
+      "name": "Javascript Punctuation",
+      "scope": [
+        "source.js punctuation.definition.parameters.begin.js",
+        "source.js punctuation.definition.parameters.end.js",
+      ],
+      "settings": {
+        "foreground": "#EBDBB2",
+      }
+    },
+    {
+      "name": "Javascript Classes",
+      "scope": [
+        "source.js entity.other.inherited-class.js",
+        "source.js entity.name.type.class.js",
+      ],
+      "settings": {
+        "foreground": "#FFD700",
+      }
+    },
+    {
+      "name": "Javascript Number",
+      "scope": [
+        "source.js constant.numeric.decimal.js"
+      ],
+      "settings": {
+        "foreground": "#B5CEA8",
+      }
+    },
+    {
+      "name": "Javascript String",
+      "scope": [
+        "source.js string.quoted.double.js",
+        "source.js string.quoted.single.js",
+        "source.js punctuation.definition.string.begin.js",
+        "source.js punctuation.definition.string.end.js",
+      ],
+      "settings": {
+        "foreground": "#ffce6c",
       }
     },
     // typescript ---------------------------------------
