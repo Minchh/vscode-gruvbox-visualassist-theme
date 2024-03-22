@@ -1450,7 +1450,10 @@
       }
     },
     {
-      "scope": "punctuation.definition.comment.html",
+      "scope": [
+        "punctuation.definition.comment.html",
+        "comment.block.html",
+      ],
       "settings": {
         "foreground": "#57A64A",
       }
