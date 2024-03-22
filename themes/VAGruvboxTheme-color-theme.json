@@ -1444,7 +1444,12 @@
       }
     },
     {
-      "scope": "string.quoted.double.html",
+      "scope": [
+        "string.quoted.double.html",
+        "string.quoted.single.html",
+        "punctuation.definition.string.begin.html",
+        "punctuation.definition.string.end.html"
+      ],
       "settings": {
         "foreground": "#ffce6c",
       }
