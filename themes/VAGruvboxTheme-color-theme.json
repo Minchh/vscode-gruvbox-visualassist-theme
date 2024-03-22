@@ -1225,6 +1225,7 @@
     {
       "scope": [
         "support.constant.font-name.css",
+        "support.constant",
         "constant.numeric.css",
         "support.constant.property-value.css",
         "constant.other.color.rgb-value.hex.css",
@@ -1232,6 +1233,14 @@
       ],
       "settings": {
         "foreground": "#B5CEA8",
+      }
+    },
+    {
+      "scope": [
+        "keyword.operator.combinator.css",
+      ],
+      "settings": {
+        "foreground": "#A89984",
       }
     },
     {
@@ -1250,7 +1259,7 @@
         "source.css support.function.misc"
       ],
       "settings": {
-        "foreground": "#fb4934"
+        "foreground": "#FF8000"
       }
     },
     {
