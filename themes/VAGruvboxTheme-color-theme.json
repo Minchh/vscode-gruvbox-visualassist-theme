@@ -668,10 +668,148 @@
       }
     },
     // C C++ ----------------------------------------
+    
     {
-      "scope": "keyword.control.directive",
+      "scope": [
+        "comment.line.double-slash.cpp",
+        "punctuation.definition.comment.cpp",
+        "punctuation.definition.comment.begin.cpp",
+        "punctuation.definition.comment.end.cpp",
+        "comment.block.cpp"
+
+      ],
       "settings": {
-        "foreground": "#8ec07c"
+        "foreground": "#57A64A"
+      }
+    },
+    {
+      "scope": [
+        "constant.language.nullptr.cpp",
+        "keyword.control.directive.include.cpp",
+        "punctuation.definition.directive.cpp",
+        "storage.type.class.cpp",
+        "storage.type.modifier.access.public.cpp",
+        "storage.type.modifier.access.private.cpp",
+        "storage.type.modifier.access.protected.cpp",
+        "storage.type.modifier.access.control.public.cpp",
+        "storage.type.modifier.access.control.protected.cpp",
+        "storage.type.modifier.access.control.private.cpp",
+        "storage.modifier.virtual.cpp",
+        "storage.modifier.specifier.functional.post-parameters.override.cpp",
+        "storage.type.built-in.primitive.cpp",
+        "storage.modifier.specifier.const.cpp",
+        "keyword.control.throw.cpp",
+        "storage.type.namespace.definition.cpp",
+        "storage.modifier.specifier.static.cpp",
+        "storage.modifier.specifier.functional.post-parameters.const.cpp",
+      ],
+      "settings": {
+        "foreground": "#E24B3C"
+      }
+    },
+    {
+      "scope": [
+        "keyword.control.for.cpp",
+        "keyword.control.while.cpp",
+        "keyword.control.do.cpp",
+        "keyword.control.try.cpp",
+        "keyword.control.catch.cpp",
+        "keyword.control.return.cpp",
+        "keyword.control.continue.cpp",
+        "keyword.control.break.cpp",
+        "keyword.control.if.cpp",
+        "keyword.control.else.cpp",
+      ],
+      "settings": {
+        "foreground": "#D3869B",
+      }
+    },
+    {
+      "name": "Classes",
+      "scope": [
+        "entity.name.type.class.cpp",
+        "entity.name.type.cpp",
+      ],
+      "settings": {
+        "foreground": "#FFD700",
+      }
+    },
+    {
+      "name": "Variables",
+      "scope": [
+        "variable.other.object.access.cpp",
+        "variable.parameter.cpp",
+        "source.cpp variable.other.object",
+      ],
+      "settings": {
+        "foreground": "#EBDBB2",
+      }
+    },
+    {
+      "scope": [
+        "entity.name.function.call.cpp",
+        "entity.name.function.member.cpp",
+      ],
+      "settings": {
+        "foreground": "#FF8000",
+      }
+    },
+    {
+      "scope": [
+        "entity.name.scope-resolution.cpp",
+        "storage.modifier.reference.cpp",
+        "keyword.operator.bitwise.cpp",
+        "keyword.operator.arithmetic.cpp",
+        "entity.name.namespace.cpp",
+        "keyword.operator.comparison.cpp",
+        "keyword.operator.assignment.cpp",
+      ],
+      "settings": {
+        "foreground": "#b8b1a8",
+      }
+    },
+    {
+      "scope": "entity.name.function.preprocessor.cpp",
+      "settings": {
+        "foreground": "#D3869B",
+      }
+    },
+    {
+      "name": "Number",
+      "scope": "constant.numeric.decimal.cpp",
+      "settings": {
+        "foreground": "#B5CEA8",
+      }
+    },
+    {
+      "name": "String",
+      "scope": [
+        "string.quoted.double.cpp",
+        "string.quoted.single.cpp",
+        "punctuation.definition.string.begin.cpp",
+        "punctuation.definition.string.end.cpp",
+        "constant.other.placeholder",
+        "string.quoted.other.lt-gt.include.cpp",
+      ],
+      "settings": {
+        "foreground": "#e9be69",
+      }
+    },
+    {
+      "scope": [
+        "constant.character.escape.cpp"
+      ],
+      "settings": {
+        "foreground": "#ff9730",
+      }
+    },
+    {
+      "scope": [
+        "keyword.operator.bitwise.shift.cpp",
+      ],
+      "settings": {
+        "foreground": "#FF8000",
+        "fontStyle": "italic"
       }
     },
     {
@@ -864,7 +1002,7 @@
 				"source.cs storage.modifier.abstract.cs"
 			],
 			"settings": {
-				"foreground": "#F74A33",
+				"foreground": "#E24B3C",
 			}
 		},
 		{
@@ -924,7 +1062,7 @@
         "source.java constant.language.java"
 			],
 			"settings": {
-				"foreground": "#F74A33",
+				"foreground": "#E24B3C",
 			}
 		},
     {
