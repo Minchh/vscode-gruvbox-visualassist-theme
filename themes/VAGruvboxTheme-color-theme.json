@@ -1365,9 +1365,21 @@
       }
     },
     {
-      "scope": "support.type.property-name.css",
+      "scope": [
+        "support.type.property-name.css",
+      ],
       "settings": {
-        "foreground": "#FF8000"
+        "foreground": "#D3869B"
+      }
+    },
+    {
+      "scope": [
+        "keyword.control.at-rule.keyframes.css",
+        "punctuation.definition.keyword.css"
+      ],
+      "settings": {
+        "foreground": "#FFD700",
+        "fontStyle": "italic"
       }
     },
     {
@@ -1402,9 +1414,20 @@
     },
     {
       "scope": [
+        "keyword.other.important.css",
+      ],
+      "settings": {
+        "foreground": "#ff9730",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": [
         "source.css support.function.transform",
         "source.css support.function.timing-function",
-        "source.css support.function.misc"
+        "source.css support.function.misc",
+        "variable.parameter.keyframe-list.css",
+        "support.function.url.css",
       ],
       "settings": {
         "foreground": "#FF8000"
@@ -1498,6 +1521,7 @@
         "source.js variable.language.this.js",
         "source.js storage.modifier.js",
         "source.js storage.type.js",
+        "source.js storage.type.function.js",
         "source.js variable.language.super.js",
         "source.js keyword.operator.expression.of.js",
         "source.js keyword.operator.expression.instanceof.js"
@@ -1524,7 +1548,11 @@
         "source.js keyword.operator.logical.js",
         "source.js keyword.operator.bitwise.shift.js",
         "source.js keyword.operator.arithmetic.js",
-        "source.js keyword.operator.assignment.js"
+        "source.js keyword.operator.assignment.js",
+        "source.js meta.brace.square.js",
+        "source.js keyword.operator.increment.js",
+        "source.js keyword.operator.decrement.js",
+        "source.js keyword.operator.assignment.compound.js",
       ],
       "settings": {
         "foreground": "#A89984",
