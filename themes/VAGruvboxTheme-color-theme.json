@@ -1563,6 +1563,12 @@
       }
     },
     {
+      "scope": "text.html.derivative",
+      "settings": {
+        "foreground": "#EBDBB2",
+      }
+    },
+    {
       "scope": [
         "string.quoted.double.html",
         "string.quoted.single.html",
