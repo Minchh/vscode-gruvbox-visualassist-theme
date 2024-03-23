@@ -591,10 +591,43 @@
     // ----------------------------------------
     // PYTHON ----------------------------------------
     {
+      "name": "Python comments",
+      "scope": [
+        "punctuation.definition.comment.python",
+        "comment.line.number-sign.python",
+        "string.quoted.docstring.multi.python",
+        "string.quoted.docstring.multi.python"
+
+      ],
+      "settings": {
+        "foreground": "#57A64A",
+      }
+    },
+    {
+      "name": "Python strings",
+      "scope": [
+        "string.quoted.single.python",
+        ""
+      ],
+      "settings": {
+        "foreground": "#ffce6c",
+      }
+    },
+    {
+      "name": "Python keywords",
+      "scope": [
+        "variable.parameter.function.language.special.self.python",
+        "variable.language.special.self.python",
+      ],
+      "settings": {
+        "foreground": "#E24B3C",
+      }
+    },
+    {
       "name": "Python function",
       "scope": ["meta.function.python", "entity.name.function.python"],
       "settings": {
-        "foreground": "#8ec07c"
+        "foreground": "#FF8000"
       }
     },
     {
@@ -606,21 +639,21 @@
         "storage.type.string.python"
       ],
       "settings": {
-        "foreground": "#fb4934"
+        "foreground": "#E24B3C"
       }
     },
     {
       "name": "Async keyword",
       "scope": ["storage.type.function.async.python"],
       "settings": {
-        "foreground": "#fb4934"
+        "foreground": "#E24B3C"
       }
     },
     {
       "name": "Python Function Call",
       "scope": "meta.function-call.generic",
       "settings": {
-        "foreground": "#83a598"
+        "foreground": "#FF8000"
       }
     },
     {
@@ -631,18 +664,72 @@
       }
     },
     {
-      "name": "Python Function decorator",
-      "scope": "entity.name.function.decorator",
+      "name": "Python variables",
+      "scope": [
+        "variable.parameter.function.language.python",
+        "support.variable.magic.python",
+        "variable.python",
+        "meta.attribute.python",
+        "source.python",
+      ],
       "settings": {
-        "foreground": "#fabd2f",
-        "fontStyle": "bold"
+        "foreground": "#EBDBB2",
+      }
+    },
+    {
+      "name": "Python Function decorator",
+      "scope": [
+        "punctuation.definition.decorator.python",
+        "entity.name.function.decorator",
+        "support.type.python",
+        "entity.name.type.class.python",
+      ],
+      "settings": {
+        "foreground": "#FFD700",
       }
     },
     {
       "name": "Python ALL CAPS",
       "scope": "constant.other.caps",
       "settings": {
+        "foreground": "#D3869B",
         "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Python operators",
+      "scope": [
+        "keyword.operator.assignment.python",
+        "keyword.operator.bitwise.python",
+        "keyword.operator.comparison.python",
+        "keyword.operator.arithmetic.python",
+      ],
+      "settings": {
+        "foreground": "#A89984",
+      }
+    },
+    {
+      "name": "Python keywords (control)",
+      "scope": [
+        "keyword.control.flow.python",
+      ],
+      "settings": {
+        "foreground": "#D3869B",
+      }
+    },
+    {
+      "name": "Python literals",
+      "scope": [
+        "constant.numeric.dec.python",
+      ],
+      "settings": {
+        "foreground": "#B5CEA8",
+      }
+    },
+    {
+      "scope": "invalid.deprecated.semicolon.python",
+      "settings": {
+        "foreground": "#EBDBB2"
       }
     },
     // SHELL ----------------------------------------
