@@ -1,5 +1,5 @@
 ## Gruvbox + Visual Assist
 
-# A remake of gruvbox theme.
+### A remake of gruvbox theme.
 
 **Enjoy!**
