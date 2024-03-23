@@ -1429,6 +1429,15 @@
         "fontStyle": ""
       }
     },
+    {
+      "scope": [
+        "string.quoted.double.css",
+        "string.quoted.single.css"
+      ],
+      "settings": {
+        "foreground": "#ffce6c",
+      }
+    },
     // HTML / XML ----------------------------------------
     {
       "scope": ["punctuation.definition.tag"],
