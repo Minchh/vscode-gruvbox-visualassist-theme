@@ -1731,6 +1731,9 @@
         "source.js string.quoted.single.js",
         "source.js punctuation.definition.string.begin.js",
         "source.js punctuation.definition.string.end.js",
+        "source.js string.template.js",
+        "source.js punctuation.definition.string.template.begin.js",
+        "source.js punctuation.definition.string.template.end.js"
       ],
       "settings": {
         "foreground": "#ffce6c",
