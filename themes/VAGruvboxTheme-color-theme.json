@@ -1676,15 +1676,23 @@
     {
       "name": "Javascript Variables",
       "scope": [
-        "source.js variable.other.property.js",
         "source.js variable.parameter.js",
         "source.js variable.other.readwrite.js",
         "source.js variable.other.constant.js",
-        "source.js variable.other.object.js",
-        "source.js variable.other.object.property.js"
       ],
       "settings": {
         "foreground": "#EBDBB2",
+      }
+    },
+    {
+      "scope": [
+        "source.js variable.other.object.js",
+        "source.js variable.other.object.property.js",
+        "source.js variable.other.property.js",
+
+      ],
+      "settings": {
+        "foreground": "#BDB76B",
       }
     },
     {
