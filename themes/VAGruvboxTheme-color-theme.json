@@ -607,10 +607,10 @@
       "name": "Python strings",
       "scope": [
         "string.quoted.single.python",
-        ""
+        "string.quoted.double.python"
       ],
       "settings": {
-        "foreground": "#ffce6c",
+        "foreground": "#f8cd8c",
       }
     },
     {
@@ -879,7 +879,7 @@
         "string.quoted.other.lt-gt.include.cpp",
       ],
       "settings": {
-        "foreground": "#e9be69",
+        "foreground": "#f8cd8c",
       }
     },
     {
@@ -970,7 +970,7 @@
         "source.cs string.quoted.single.cs"
 			],
 			"settings": {
-				"foreground": "#ffce6c",
+				"foreground": "#f8cd8c",
 			}
 		},
 		{
@@ -1223,7 +1223,7 @@
         "source.java string.quoted.single.java"
 			],
 			"settings": {
-				"foreground": "#ffce6c",
+				"foreground": "#f8cd8c",
 			}
 		},
 		{
@@ -1389,7 +1389,7 @@
     {
       "scope": "string.quoted.double.json",
       "settings": {
-        "foreground": "#83a598"
+        "foreground": "#f8cd8c"
       }
     },
     {
@@ -1398,7 +1398,7 @@
         "source.json meta.structure.dictionary.json support.type.property-name.json"
       ],
       "settings": {
-        "foreground": "#b8bb26"
+        "foreground": "#e9ca1b"
       }
     },
     {
@@ -1407,7 +1407,7 @@
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
       ],
       "settings": {
-        "foreground": "#8ec07c"
+        "foreground": "#B5CEA8"
       }
     },
     {
@@ -1416,7 +1416,7 @@
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
       ],
       "settings": {
-        "foreground": "#d3869b"
+        "foreground": "#D3869B"
       }
     },
     {
@@ -1477,7 +1477,22 @@
         "constant.numeric.css",
         "support.constant.property-value.css",
         "constant.other.color.rgb-value.hex.css",
-        "keyword.other.unit.px.css"
+        "keyword.other.unit.px.css",
+        "keyword.other.unit.rem.css",
+        "keyword.other.unit.em.css",
+        "keyword.other.unit.vw.css",
+        "keyword.other.unit.vh.css",
+        "keyword.other.unit.cm.css",
+        "keyword.other.unit.mm.css",
+        "keyword.other.unit.px.css",
+        "keyword.other.unit.pc.css",
+        "keyword.other.unit.pt.css",
+        "keyword.other.unit.in.css",
+        "keyword.other.unit.percentage.css",
+        "keyword.other.unit.vmin.css",
+        "keyword.other.unit.vmax.css",
+        "keyword.other.unit.ex.css",
+        "keyword.other.unit.ch.css",
       ],
       "settings": {
         "foreground": "#B5CEA8",
@@ -1546,7 +1561,7 @@
         "string.quoted.single.css"
       ],
       "settings": {
-        "foreground": "#ffce6c",
+        "foreground": "#f8d8a8",
       }
     },
     // HTML / XML ----------------------------------------
@@ -1577,7 +1592,7 @@
         "punctuation.definition.string.end.html"
       ],
       "settings": {
-        "foreground": "#ffce6c",
+        "foreground": "#f8cd8c",
       }
     },
     {
@@ -1736,7 +1751,7 @@
         "source.js punctuation.definition.string.template.end.js"
       ],
       "settings": {
-        "foreground": "#ffce6c",
+        "foreground": "#f8cd8c",
       }
     },
     // typescript ---------------------------------------
@@ -1820,6 +1835,19 @@
       ],
       "settings": {
         "foreground": "#fe8019"
+      }
+    },
+    // .ENV ------------------------------------------
+    {
+      "scope": "keyword.other.definition.ini",
+      "settings": {
+        "foreground": "#BDB76B",
+      }
+    },
+    {
+      "scope": "source.ini",
+      "settings": {
+        "foreground": "#B5CEA8",
       }
     },
     // POWERSHELL ------------------------------------
