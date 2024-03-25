@@ -7,7 +7,7 @@
     "type": "git",
     "url": "https://github.com/Minchh/vscode-gruvbox-visualassist-theme"
   },
-  "version": "0.7.7",
+  "version": "0.7.8",
   "engines": {
     "vscode": "^1.87.0"
   },
