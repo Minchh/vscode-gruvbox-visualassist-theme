@@ -1837,6 +1837,45 @@
         "foreground": "#fe8019"
       }
     },
+    // ASSEMBLY (ARM)
+    {
+      "name": "Comments",
+      "scope": "comment.arm",
+      "settings": {
+        "foreground": "#57A64A",
+      }
+    },
+    {
+      "name": "Functions",
+      "scope": "support.function.mnemonic.arithmetic.arm",
+      "settings": {
+        "foreground": "#FF8000",
+      }
+    },
+    {
+      "scope": "keyword.control.directive.arm",
+      "settings": {
+        "foreground": "#B8D7A3",
+      }
+    },
+    {
+      "scope": "routine.arm",
+      "settings": {
+        "foreground": "#FFD700",
+      }
+    },
+    {
+      "scope": "variable.named.arm",
+      "settings": {
+        "foreground": "#EBDBB2",
+      }
+    },
+    {
+      "scope": "constant.numeric.dec.arm",
+      "settings": {
+        "foreground": "#B5CEA8",
+      }
+    },
     // .ENV ------------------------------------------
     {
       "scope": "keyword.other.definition.ini",
