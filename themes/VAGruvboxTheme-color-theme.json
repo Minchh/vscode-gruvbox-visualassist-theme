@@ -1432,7 +1432,8 @@
     {
       "scope": "entity.other.attribute-name.css",
       "settings": {
-        "foreground": "#bdb76b"
+        "foreground": "#bdb76b",
+        "fontStyle": "bold"
       }
     },
     {
@@ -1512,7 +1513,8 @@
         "entity.other.attribute-name.id.css"
       ],
       "settings": {
-        "foreground": "#e8bf6a"
+        "foreground": "#e8bf6a",
+        "fontStyle": "bold"
       }
     },
     {
@@ -1552,7 +1554,7 @@
       "scope": ["entity.name.tag.css"],
       "settings": {
         "foreground": "#e8bf6a",
-        "fontStyle": ""
+        "fontStyle": "bold"
       }
     },
     {
@@ -1575,7 +1577,7 @@
       "scope": ["text.html entity.name.tag", "text.html punctuation.tag"],
       "settings": {
         "foreground": "#7ca197",
-        "fontStyle": ""
+        "fontStyle": "bold"
       }
     },
     {
@@ -1608,6 +1610,7 @@
       "scope": "entity.other.attribute-name.html",
       "settings": {
         "foreground": "#FFD700",
+        "fontStyle": "bold"
       }
     },
     // javascript ---------------------------------------
